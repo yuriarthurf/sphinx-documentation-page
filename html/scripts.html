@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>scripts package &#8212; dora 2021 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/classic.css" />
+    
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="scripts" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="scripts"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">dora 2021 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">scripts package</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="scripts-package">
+<h1>scripts package<a class="headerlink" href="#scripts-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-scripts.parser">
+<span id="scripts-parser-module"></span><h2>scripts.parser module<a class="headerlink" href="#module-scripts.parser" title="Permalink to this headline">¶</a></h2>
+<p>Parser Implementation</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.parser.Parser">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">scripts.parser.</span></span><span class="sig-name descname"><span class="pre">Parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scripts.parser.Parser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Parser Object</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.parser.Parser.clean">
+<em class="property"><span class="pre">classmethod</span> </em><span class="sig-name descname"><span class="pre">clean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#scripts.parser.Parser.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove query comments and line breaks
+:return: clean sql query</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-scripts.reader">
+<span id="scripts-reader-module"></span><h2>scripts.reader module<a class="headerlink" href="#module-scripts.reader" title="Permalink to this headline">¶</a></h2>
+<p>Reader Class Implementation</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.reader.Reader">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">scripts.reader.</span></span><span class="sig-name descname"><span class="pre">Reader</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_dialect</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_dialect</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dir</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">migration_report</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scripts.reader.Reader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.reader.Reader.create_folders">
+<span class="sig-name descname"><span class="pre">create_folders</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#scripts.reader.Reader.create_folders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create output folders 
+:return: folder paths</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.reader.Reader.create_summary">
+<span class="sig-name descname"><span class="pre">create_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">errors</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_queries</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#scripts.reader.Reader.create_summary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the script summary
+:param errors: The list of errors that occurred during translation
+:param n_queries: Number of queries per script
+:return: The list with the summary</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.reader.Reader.translate_files">
+<span class="sig-name descname"><span class="pre">translate_files</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#scripts.reader.Reader.translate_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and translate input directory files 
+:param summary_dict: If true, returns the summary dictionary
+:return:The dictionary with the summary of the files read</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.reader.Reader.translate_script">
+<span class="sig-name descname"><span class="pre">translate_script</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">script</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#scripts.reader.Reader.translate_script" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate the script to the target language
+:param script: SQL script
+:return: The resulting script + The list of errors + Number of queries
+:rtype: string, list, int</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-scripts.report">
+<span id="scripts-report-module"></span><h2>scripts.report module<a class="headerlink" href="#module-scripts.report" title="Permalink to this headline">¶</a></h2>
+<p>Report Class Implementation</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.report.Report">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">scripts.report.</span></span><span class="sig-name descname"><span class="pre">Report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">summary_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scripts.report.Report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.report.Report.create_visual">
+<span class="sig-name descname"><span class="pre">create_visual</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scripts.report.Report.create_visual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the report’s table and chart
+:return: the table in html and the encoded chart</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.report.Report.generate_report">
+<span class="sig-name descname"><span class="pre">generate_report</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scripts.report.Report.generate_report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the report in html</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-scripts.transpiler">
+<span id="scripts-transpiler-module"></span><h2>scripts.transpiler module<a class="headerlink" href="#module-scripts.transpiler" title="Permalink to this headline">¶</a></h2>
+<p>Transpiler Class Implementation</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="scripts.transpiler.Transpiler">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">scripts.transpiler.</span></span><span class="sig-name descname"><span class="pre">Transpiler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">from_dialect</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_dialect</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scripts.transpiler.Transpiler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Transpiler Object</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.transpiler.Transpiler.format">
+<span class="sig-name descname"><span class="pre">format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#scripts.transpiler.Transpiler.format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format to SQL Query, based on dialect
+:param tree: query tree representation
+:return: sql query as string</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.transpiler.Transpiler.resolve">
+<span class="sig-name descname"><span class="pre">resolve</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#scripts.transpiler.Transpiler.resolve" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resolve tree based on dialect recursively
+:return: the resulting tree</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="scripts.transpiler.Transpiler.translate">
+<span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parse</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dora_parser.parser.Parser</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#scripts.transpiler.Transpiler.translate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translation are maded by two steps: resolve the query tree and format to SQL
+:param parse: Parser object
+:return: list with two values: SQL query and problems</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-scripts">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-scripts" title="Permalink to this headline">¶</a></h2>
+<p>Dora Parser Module</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">scripts package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-scripts.parser">scripts.parser module</a></li>
+<li><a class="reference internal" href="#module-scripts.reader">scripts.reader module</a></li>
+<li><a class="reference internal" href="#module-scripts.report">scripts.report module</a></li>
+<li><a class="reference internal" href="#module-scripts.transpiler">scripts.transpiler module</a></li>
+<li><a class="reference internal" href="#module-scripts">Module contents</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">scripts</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/scripts.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="scripts"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">dora 2021 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">scripts package</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Yuri.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.2.0.
+    </div>
+  </body>
+</html>
